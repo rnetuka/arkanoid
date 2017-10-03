@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arkanoid</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <script type="text/javascript" src="src/paddle.js"></script>
+        <script type="text/javascript" src="src/ball.js"></script>
+        <script type="text/javascript" src="src/brick.js"></script>
+        <script type="text/javascript" src="src/game-stages.js"></script>
+        <script type="text/javascript" src="src/geometry.js"></script>
+        <script type="text/javascript" src="src/collisions.js"></script>
+        <script type="text/javascript" src="src/game-model.js"></script>
+        <script type="text/javascript" src="src/power-up.js"></script>
+
+        <script type="text/javascript" src="src/brick-ui.js"></script>
+        <script type="text/javascript" src="src/paddle-ui.js"></script>
+        <script type="text/javascript" src="src/laser-ui.js"></script>
+        <script type="text/javascript" src="src/ball-ui.js"></script>
+        <script type="text/javascript" src="src/power-up-ui.js"></script>
+        <script type="text/javascript" src="src/game-ui.js"></script>
+        <script>
+            window.onload = function() {
+                setUp();
+            };
+        </script>
+    </head>
+    <body>
+        <div class="canvas-wrapper">
+            <canvas id="game-canvas" width="500" height="500">
+                Your browser doesn't support HTML canvas.
+            </canvas>
+            <div class="legend">LEFT and RIGHT arrow keys or MOUSE to play</div>
+        </div>
+    </body>
+</html>
